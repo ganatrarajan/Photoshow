@@ -9,6 +9,7 @@ class AlbumsController extends Controller
 {
     public function index()
     {
+        // this is albums controller
         $albums = Album::get();
         return view('albums.index')->with('albums',$albums);
     }
